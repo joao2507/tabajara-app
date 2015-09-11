@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabajara</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="styles/kendo.common.min.css" rel="stylesheet" />
+        <link href="styles/kendo.default.min.css" rel="stylesheet" />
+        <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="styles/bootstrap.min.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript">
+            var IS_PHONEGAP = false;
+        </script>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/lib/kendo.all.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/lib/kendo.culture.pt-BR.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/functions.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    </head> 
+    <body> 
+
+        <div data-role="view" id="home" data-title="Tabajara | Home" data-layout="tema" class="home">
+            <div class="container">
+                <h1 class="text-center">Escolha e ouça:</h1>
+                
+                <a href="#radio-am" class="botao-radio"><img src="img/logo-radio-am.jpg" /></a>
+                <a href="#radio-fm" class="botao-radio"><img src="img/logo-radio-fm.jpg" /></a>
+            </div>
+        </div>
+
+        <div data-role="view" id="radio-fm" data-title="Tabajara | FM" data-layout="tema" class="radio-fm">
+            FM
+        </div>
+
+        <div data-role="view" id="radio-am" data-title="Tabajara | AM" data-layout="tema" class="radio-am">
+            FM
+        </div>
+
+        <div data-role="view" id="sobre-app" data-title="Sobre o APP" data-layout="tema" class="sobre">
+            <h1>Sobre o APP</h1>
+        </div>
+
+        <div data-role="view" id="contato-comercial" data-title="Contato Comercial" data-layout="tema" class="interna">
+            <h1>Contato Comercial</h1>
+            <p><strong>Central Telefônica: </strong><br/>(83) 3216-5000</p>
+        </div>
+
+        <div data-role="layout" data-id="tema">
+            <header data-role="header" class="container-fluid">
+                <div class="row">
+                    <div data-role="navbar" class="col-xs-12">
+                        <a data-role="button" class="button-menu" data-rel="drawer" href="#menu" data-icon="menu-icon" data-align="left"></a>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-6">
+                                <img src="img/logo-home.png" class="img-responsive center-block logo-tabajara" />
+                            </div>
+                            <div class="col-xs-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div data-role="drawer" id="menu" style="width: 250px" data-views="['home','radio-fm','radio-am','contato-comercial','sobre-app']">
+            <ul data-role="listview" data-type="group">
+                <li>
+                    <ul>
+                        <li><a href="#home" data-transition="none">Início</a></li>
+                        <li><a href="#radio-fm" data-transition="none">Ouvir Tabajara FM - 105.5</a></li>
+                        <li><a href="#radio-am" data-transition="none">Ouvir Tabajara AM - 1110</a></li>
+                        <li><a href="#contato-comercial" data-transition="none">Contato Comercial</a></li>
+                        <li><a href="#sobre-app" data-transition="none">Sobre o APP</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

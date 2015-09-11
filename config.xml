@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cyoung.tabajara" version="1.0.0">
+
+    <name>Tabajara</name>
+
+    <description> </description>
+
+    <author email="contato@cyoung.com.br" href="http://www.cyoung.com.br">
+        Cyoung
+    </author>
+
+    <preference name="permissions" value="none"/>
+
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    
+    <gap:platform name="android"/>
+    <gap:platform name="ios"/>
+    
+    <preference name='phonegap-version' value='cli-5.1.1' />
+    <preference name="android-minSdkVersion" value="5"/>
+    
+    <preference name="orientation" value="portrait"/>
+    <preference name="target-device" value="universal"/>
+    <preference name="prerendered-icon" value="true"/>
+    <preference name="exit-on-suspend" value="true"/>
+    <preference name="android-installLocation" value="auto"/>
+    
+    <gap:plugin name="org.apache.cordova.dialogs"/>
+    <gap:plugin name="org.apache.cordova.network-information"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.device" />
+    
+    <access origin="*"/>
+
+</widget>
